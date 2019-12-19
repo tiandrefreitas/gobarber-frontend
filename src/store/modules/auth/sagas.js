@@ -46,8 +46,7 @@ export function* signUp({ payload }) {
       name,
       email,
       password,
-      provider: true,
-      avatar_id: 1,
+      provider: true,      
     });
 
     history.push('/');
