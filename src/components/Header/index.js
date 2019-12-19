@@ -28,11 +28,7 @@ export default function Header() {
               <Link to="/profile">Meu perfil</Link>
             </div>
 
-            <img
-              src={profile.avatar.url}
-              onError="https://api.adorable.io/avatars/50/asdsada.png"
-              alt="Profile"
-            />
+            <img src={profile.avatar.url} alt="Profile" />
           </Profile>
         </aside>
       </Content>
