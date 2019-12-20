@@ -29,11 +29,13 @@ export default function Header() {
             </div>
 
             <img
-              src={profile.avatar.url}
-              onError={e => {
-                e.target.onerror = null;
-                e.target.src = 'https://api.adorable.io/avatars/50/asdsada.png';
-              }}
+              onError={event =>
+                event.target.setAttribute(
+                  'src',
+                  'https://api.adorable.io/avatars/50/asdsada.png'
+                )
+              }
+              src={preview}
               alt="Profile"
             />
           </Profile>
