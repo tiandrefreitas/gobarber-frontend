@@ -53,7 +53,13 @@ export default function AvatarInput() {
     <Container>
       <label htmlFor="avatar">
         <img
-          src={preview || 'https://api.adorable.io/avatars/50/asdsada.png'}
+          onError={event =>
+            event.target.setAttribute(
+              'src',
+              'https://api.adorable.io/avatars/50/asdsada.png'
+            )
+          }
+          src={preview}
           alt=""
         />
         <input
