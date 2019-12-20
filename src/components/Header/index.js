@@ -35,7 +35,7 @@ export default function Header() {
                   'https://api.adorable.io/avatars/50/asdsada.png'
                 )
               }
-              src={preview}
+              src={profile.avatar.url}
               alt="Profile"
             />
           </Profile>
