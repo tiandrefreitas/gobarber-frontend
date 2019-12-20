@@ -29,11 +29,11 @@ export default function Header() {
             </div>
 
             <img
-              src={
-                profile.avatar.url
-                  ? 'https://api.adorable.io/avatars/50/asdsada.png'
-                  : profile.avatar.url
-              }
+              src={profile.avatar.url}
+              onError={e => {
+                e.target.onerror = null;
+                e.target.src = 'https://api.adorable.io/avatars/50/asdsada.png';
+              }}
               alt="Profile"
             />
           </Profile>
