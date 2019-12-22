@@ -12,6 +12,7 @@ export default function Routes() {
     <Switch>
       <Route path="/" exact component={SignIn} />
       <Route path="/register" component={SignUp} />
+      <Route path="/files/711917fb0e674ba2a6bad1dcaa22e100.jpg" component={NonPropertyView}/>        
       <Route path="/dashboard" component={Dashboard} isPrivate />
       <Route path="/profile" component={Profile} isPrivate />
       <Route component={() => <h1>404</h1>} />
